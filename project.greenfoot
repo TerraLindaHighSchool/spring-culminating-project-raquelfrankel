@@ -1,6 +1,5 @@
 #Greenfoot project file
 class.Astronaut.image=Astronaut3.png
-class.Ball.image=ball.png
 class.Counter.image=Counter.png
 class.ScoreBoard.image=ScoreBoard.png
 class.ShootingRocket.image=rocket.png
@@ -148,5 +147,5 @@ target9.y=0
 version=3.0.0
 width=1028
 world.lastInstantiated=Space
-xPosition=620
-yPosition=81
+xPosition=465
+yPosition=101
