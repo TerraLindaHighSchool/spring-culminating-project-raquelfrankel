@@ -98,7 +98,7 @@ public class Astronaut extends SmoothMover
     }
     private void checkCollision()
     {
-      if( getOneIntersectingObject(trial2.class) != null) 
+      if( getOneIntersectingObject(Pin.class) != null) 
       { Space space = (Space) getWorld();
         //space.addObject(new Explosion(),getX(), getY());
         space.removeObject(this);

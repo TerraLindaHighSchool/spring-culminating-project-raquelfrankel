@@ -50,10 +50,10 @@ public class Ball extends SmoothMover
     }
 
     public void collision()
-    {if(isTouching(trial2.class))
+    {if(isTouching(Pin.class))
         
         {
-            removeTouching(trial2.class);
+            removeTouching(Pin.class);
             pointsToAdd = pointsToAdd + 12;
             //GreenfootSound au = new GreenfootSound("bite.mp3");
             //au.play();

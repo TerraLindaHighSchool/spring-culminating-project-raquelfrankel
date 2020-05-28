@@ -45,7 +45,7 @@ public class Space extends World
         {
             int x = Greenfoot.getRandomNumber(getWidth()/2);
             int y = Greenfoot.getRandomNumber(getHeight()/2);
-            addObject(new trial2(), x, y);
+            addObject(new Pin(), x, y);
         }
     }
 

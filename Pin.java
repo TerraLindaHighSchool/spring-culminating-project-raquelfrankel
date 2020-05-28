@@ -6,7 +6,7 @@ import greenfoot.*;
  * @author Poul Henriksen
  * @author Michael Kölling
  */
-public class trial2 extends SmoothMover
+public class Pin extends SmoothMover
 {
     /** Size of this asteroid */
     private int size;
@@ -17,7 +17,7 @@ public class trial2 extends SmoothMover
     /**
      * Create an asteroid with default size and random direction of movement.
      */
-    public trial2()
+    public Pin()
     {
         this(90);
     }
@@ -25,7 +25,7 @@ public class trial2 extends SmoothMover
     /**
      * Create an asteroid with a given size and random direction of movement.
      */
-    public trial2(int size)
+    public Pin(int size)
     {
         super(new Vector(Greenfoot.getRandomNumber(360), 2));
         setSize(size);
@@ -34,7 +34,7 @@ public class trial2 extends SmoothMover
     /**
      * Create an asteroid with a given size and direction of movement.
      */
-    public trial2(int size, Vector velocity)
+    public Pin(int size, Vector velocity)
     {
         super(velocity);
         setSize(size);
@@ -97,8 +97,8 @@ public class trial2 extends SmoothMover
             double l = getVelocity().getLength();
             Vector speed1 = new Vector(r + 60, l * 1.2);
             Vector speed2 = new Vector(r - 60, l * 1.2);        
-            trial2 a1 = new trial2(size/2, speed1);
-            trial2 a2 = new trial2(size/2, speed2);
+            Pin a1 = new Pin(size/2, speed1);
+            Pin a2 = new Pin(size/2, speed2);
             getWorld().addObject(a1, getX(), getY());
             getWorld().addObject(a2, getX(), getY());        
             a1.move();
